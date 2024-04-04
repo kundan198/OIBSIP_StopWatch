@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        app:srcCompat="@drawable/sw" />
+
+    <TextView
+        android:id="@+id/tvElapsedTime"
+        android:layout_below="@+id/imageView4"
+        android:layout_width="325dp"
+        android:layout_height="108dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="00:00:00.000"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/tvLapTimes"
+        android:layout_width="match_parent"
+        android:layout_height="389dp"
+        android:layout_below="@id/tvElapsedTime"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="Lap Times:"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ADCADA"
+            android:text="Start"
+            android:textColor="#2E4863" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ADCADA"
+            android:text="Stop"
+            android:textColor="#2E4863" />
+
+        <Button
+            android:id="@+id/btnLap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ADCADA"
+            android:text="Lap"
+            android:textColor="#2E4863" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ADCADA"
+            android:text="Clear"
+            android:textColor="#2E4863" />
+    </LinearLayout>
+
+
+</RelativeLayout>
